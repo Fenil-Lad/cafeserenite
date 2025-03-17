@@ -1,0 +1,52 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-date",
+      "2": "I-date",
+      "3": "L-date",
+      "4": "U-date",
+      "5": "B-issue",
+      "6": "I-issue",
+      "7": "L-issue",
+      "8": "U-issue",
+      "9": "B-item",
+      "10": "I-item",
+      "11": "L-item",
+      "12": "U-item",
+      "13": "B-location",
+      "14": "I-location",
+      "15": "L-location",
+      "16": "U-location",
+      "17": "B-menu_category",
+      "18": "I-menu_category",
+      "19": "L-menu_category",
+      "20": "U-menu_category",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-date": 1,
+      "I-date": 2,
+      "L-date": 3,
+      "U-date": 4,
+      "B-issue": 5,
+      "I-issue": 6,
+      "L-issue": 7,
+      "U-issue": 8,
+      "B-item": 9,
+      "I-item": 10,
+      "L-item": 11,
+      "U-item": 12,
+      "B-location": 13,
+      "I-location": 14,
+      "L-location": 15,
+      "U-location": 16,
+      "B-menu_category": 17,
+      "I-menu_category": 18,
+      "L-menu_category": 19,
+      "U-menu_category": 20,
+      "O": 0
+    },
+    "num_tags": 21
+  }
+]

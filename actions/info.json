@@ -1,0 +1,121 @@
+{
+  "cafe_info": {
+    "name": "Café Serenité",
+    "description": "A cozy cafe offering fresh meals, beverages, and snacks with a focus on quality ingredients and customer service.",
+    "intents": {
+      "ask_menu": {
+        "description": "View our menu categories and popular items",
+        "categories": {
+          "breakfast": [
+            "Pancakes",
+            "Omelettes",
+            "Avocado Toast"
+          ],
+          "lunch": [
+            "Sandwiches",
+            "Salads",
+            "Soup of the Day"
+          ],
+          "beverages": [
+            "Coffee",
+            "Specialty Teas",
+            "Fresh Juices"
+          ],
+          "snacks": [
+            "Pastries",
+            "Muffins",
+            "Granola Bars"
+          ]
+        }
+      },
+      "ask_recommendations": {
+        "description": "Discover customer favorites and seasonal specialties",
+        "popular_items": [
+          "Signature Latte",
+          "Homemade Quiche",
+          "Chocolate Croissant"
+        ],
+        "seasonal_special": "Pumpkin Spice Latte (Fall)"
+      },
+      "ask_dietary_options": {
+        "description": "Dietary-friendly menu options",
+        "available_options": [
+          "Vegan",
+          "Vegetarian",
+          "Gluten-Free"
+        ],
+        "note": "Allergen information available upon request"
+      },
+      "place_order": {
+        "description": "How to place an order",
+        "methods": [
+          "In-person at counter",
+          "Online via website/app",
+          "Phone order"
+        ],
+        "delivery_minimum": "$15 for free delivery"
+      },
+      "customize_order": {
+        "description": "Customize your meal/drink",
+        "options": [
+          "Extra toppings",
+          "Dairy-free milk alternatives",
+          "Adjust spice level"
+        ]
+      },
+      "ask_hours": {
+        "description": "Cafe operating hours",
+        "hours": {
+          "weekdays": "7:00 AM - 7:00 PM",
+          "weekends": "8:00 AM - 8:00 PM",
+          "holidays": "Closed on major holidays"
+        }
+      },
+      "ask_location": {
+        "description": "Find our physical location",
+        "address": "123 Main Street, Cityville, ST 12345",
+        "landmark": "Near Central Park, next to Book Haven"
+      },
+      "ask_discounts": {
+        "description": "Available promotions and deals",
+        "offers": [
+          "10% student discount",
+          "Loyalty program (5 visits = 1 free coffee)",
+          "Happy Hour: 2 PM - 4 PM daily"
+        ]
+      },
+      "reserve_table": {
+        "description": "Book a table for dine-in",
+        "methods": [
+          "Online reservation system",
+          "Call (555) 123-4567"
+        ],
+        "group_limit": "Max 8 people per reservation"
+      },
+      "payment_methods": {
+        "description": "Accepted payment options",
+        "methods": [
+          "Credit/Debit Cards",
+          "Mobile Pay (Apple/Google)",
+          "Cash"
+        ]
+      },
+      "delivery_options": {
+        "description": "Delivery services and areas",
+        "partners": [
+          "Uber Eats",
+          "DoorDash"
+        ],
+        "radius": "5-mile radius for in-house delivery"
+      },
+      "report_issue": {
+        "description": "Address order concerns or feedback",
+        "contact": {
+          "phone": "(555) 123-4567",
+          "email": "support@cafeserenite.com",
+          "response_time": "Within 2 business hours"
+        }
+      }
+    }
+  }
+}

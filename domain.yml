@@ -1,0 +1,120 @@
+version: "3.1"
+
+# Intents (user goals)
+intents:
+  - greet
+  - goodbye
+  - thank
+  - ask_hours
+  - ask_location
+  - ask_menu
+  - ask_discounts
+  - payment_methods
+  - delivery_options
+  - track_order
+  - provide_order_number
+  - report_issue
+  - provide_issue
+
+
+
+# Entities (extracted information)
+entities:
+  - order_number
+  - issue
+  - contact_method
+
+slots:
+  issue:
+    type: text
+    influence_conversation: false
+
+
+forms:
+  capture_full_message_form:
+    required_slots:
+      - issue
+
+
+# Bot responses
+responses:
+  utter_greet:
+    - text: "👋 Hello! Welcome to Café Serenité. How can I assist you today?"
+
+  utter_goodbye:
+    - text: "Have a great day! Come back soon for more coffee! ☕"
+
+  utter_thank:
+    - text: "You’re welcome! Let me know if you need anything else. 😊"
+
+  utter_ask_order_number:
+    - text: "Please provide your order number so I can check the status."
+  
+  utter_ask_issue:
+    - text: "Please describe the issue."
+  
+  utter_ask_contact_method:
+    - text: "Please provide your contact method (email or phone)" 
+
+  # utter_order_status:
+  #   - text: "Your order is {status}."
+
+  # utter_hours:
+  #   - text: "We’re open from 7 AM to 9 PM daily. On [date], we close at [time]."
+
+  # utter_location:
+  #   - text: "We’re located in [location]. Here’s our address: [123 Coffee Street]."
+
+  # utter_menu:
+  #   - text: "We serve coffee, breakfast items, sandwiches, and desserts! Would you like to see our [menu_category] options?"
+
+  # utter_recommendations:
+  #   - text: "Our bestseller is the [item]! For [season], I’d recommend our [item]."
+
+  # utter_dietary_options:
+  #   - text: "Yes, we have [dietary_requirement] options! Would you like me to list them?"
+
+  # utter_order_confirmation:
+  #   - text: "Got it! You’ve ordered [quantity] [item]. Customization: [customization]."
+
+  # utter_track_order:
+  #   - text: "Your order is out for delivery and will arrive in 20 minutes! 🚚"
+
+  # utter_discounts:
+  #   - text: "Yes! We offer [discount_type] discounts. Use code CAFE10 for 10% off!"
+
+  # utter_reserve_table:
+  #   - text: "Booked a table for [num_people] on [date] at [time]. See you soon! 🪑"
+
+  # utter_payment_methods:
+  #   - text: "We accept [payment_method], cash, and mobile wallets."
+
+  # utter_delivery_options:
+  #   - text: "We deliver to [delivery_area]! Delivery fee: $3."
+
+
+# Synonyms for entity consistency
+# synonyms:
+#   menu_category:
+#     - "coffee"
+#     - "breakfast"
+#     - "drinks"
+#     - "desserts"
+#   payment_method:
+#     - "credit cards"
+#     - "PayPal"
+#   dietary_requirement:
+#     - "vegan"
+#     - "gluten-free"
+#     - "dairy-free"
+
+actions:
+  - handle_information_queries
+  - handle_menu_queries
+  - handle_track_order
+  - handle_report_issue
+
+# Session management
+session_config:
+  session_expiration_time: 60  # Session expires after 60 minutes
+  carry_over_slots_to_new_session: true

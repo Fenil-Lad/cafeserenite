@@ -1,0 +1,48 @@
+version: "3.1"
+
+rules:
+
+- rule: Greet the user
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: thank
+  - action: utter_thank
+
+- rule: Say location of cafe
+  steps:
+  - intent: ask_location
+  - action: handle_information_queries
+
+- rule: Say the timings if the cafe
+  steps:
+  - intent: ask_hours
+  - action: handle_information_queries
+
+- rule: Handle Menu Queries
+  steps:
+  - intent: ask_menu
+  - action: handle_menu_queries
+
+- rule: Say the Discount information
+  steps:
+  - intent: ask_discounts
+  - action: handle_information_queries
+
+- rule: Say payment methods
+  steps:
+  - intent: payment_methods
+  - action: handle_information_queries
+
+- rule: Say delivery options
+  steps:
+  - intent: delivery_options
+  - action: handle_information_queries

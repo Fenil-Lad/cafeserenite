@@ -1,0 +1,15 @@
+{
+  "0": "ask_discounts",
+  "1": "ask_hours",
+  "2": "ask_location",
+  "3": "ask_menu",
+  "4": "delivery_options",
+  "5": "goodbye",
+  "6": "greet",
+  "7": "payment_methods",
+  "8": "provide_issue",
+  "9": "provide_order_number",
+  "10": "report_issue",
+  "11": "thank",
+  "12": "track_order"
+}

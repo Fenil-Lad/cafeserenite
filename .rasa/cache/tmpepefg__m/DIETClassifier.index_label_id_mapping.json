@@ -1,0 +1,18 @@
+{
+  "0": "ask_dietary_options",
+  "1": "ask_discounts",
+  "2": "ask_hours",
+  "3": "ask_location",
+  "4": "ask_menu",
+  "5": "ask_recommendations",
+  "6": "customize_order",
+  "7": "delivery_options",
+  "8": "goodbye",
+  "9": "greet",
+  "10": "payment_methods",
+  "11": "place_order",
+  "12": "report_issue",
+  "13": "reserve_table",
+  "14": "thank",
+  "15": "track_order"
+}

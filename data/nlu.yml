@@ -1,0 +1,136 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - Hi
+    - Hello
+    - Good morning
+    - Hey there
+
+- intent: goodbye
+  examples: |
+    - Bye
+    - See you later
+    - Goodbye
+    - Have a nice day
+
+- intent: thank
+  examples: |
+    - Thanks!
+    - Thank you
+    - Appreciate it
+
+- intent: ask_hours
+  examples: |
+    - When do you open?
+    - Are you open [on Sundays](date)?
+    - What are your opening hours?
+    - Do you close early [today](date)?
+
+- intent: ask_location
+  examples: |
+    - Where is your café located?
+    - Do you have a branch in [downtown](location)?
+    - What’s your address?
+
+- intent: ask_menu
+  examples: |
+    - What’s on the menu?
+    - Do you serve [coffee](menu_category)?
+    - Can I see the [breakfast](menu_category) options?
+    - What [drinks](menu_category) do you have?
+
+- intent: track_order
+  examples: |
+    - Where’s my order?
+    - How long will delivery take?
+    - Can I check the status of my order?
+
+- intent: provide_order_number
+  examples: |
+    - My order number is [12345](order_number)
+    - I want to check order [67890](order_number)
+    - Order number [54321](order_number)
+    - Can you track my order [#98765](order_number)
+
+- intent: ask_discounts
+  examples: |
+    - Are there any promotions?
+    - Do you offer [student discounts](discount_type)?
+    - Is there a [happy hour](discount_type) deal?
+
+- intent: payment_methods
+  examples: |
+    - Do you accept [credit cards](payment_method)?
+    - Can I pay with [PayPal](payment_method)?
+    - Is cash allowed?
+    - Payment methods?
+    - What are the payment methods?
+    - How to pay?
+
+- intent: delivery_options
+  examples: |
+    - Do you deliver to [Central Park](delivery_area)?
+    - Is takeout available?
+    - What’s the delivery fee?
+
+- intent: report_issue
+  examples: |
+    - I want to report an issue with my order.
+    - I need to report a problem with my order.
+    - Can I report an issue with my order?
+    - I have an issue with my order.
+    - There's a problem with my order.
+    - I'd like to file a complaint about my order.
+    - I received the wrong order.
+    - My food was not prepared correctly.
+    - My order arrived late.
+    - The order is incomplete.
+
+- intent: provide_issue
+  examples: |
+    - My order is missing.
+    - The coffee was cold.
+    - I received the wrong sandwich.
+    - The food arrived late.
+    - I did not get my drink.
+    - My order was incorrect.
+    - The pizza was undercooked.
+    - I didn’t get the right order.
+    - The fries were soggy.
+    - My drink was spilled.
+
+
+# - intent: reserve_table
+#   examples: |
+#     - Book a table for [four](num_people)
+#     - Reserve a seat [tomorrow](date) at [7 PM](time)
+#     - Can I get a table [tonight](date)?
+
+# - intent: place_order
+#   examples: |
+#     - I want to order a [cappuccino](item)
+#     - Can I get [two](quantity) [croissants](item)?
+#     - [One](quantity) [latte](item), please
+#     - Add a [sandwich](item) to my order
+
+# - intent: ask_recommendations
+#   examples: |
+#     - What’s your bestseller?
+#     - Recommend a [summer](season) drink
+#     - What do people usually order here?
+
+# - intent: ask_dietary_options
+#   examples: |
+#     - Do you have [vegan](dietary_requirement) options?
+#     - Is the cake [gluten-free](dietary_requirement)?
+#     - Are there [dairy-free](dietary_requirement) desserts?
+
+
+# - intent: customize_order
+#   examples: |
+#     - Can I get [extra sugar](customization) in my coffee?
+#     - Make it [soy milk](customization)
+#     - [No cream](customization), please
+#     - Add [caramel syrup](customization)

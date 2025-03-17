@@ -1,0 +1,23 @@
+version: "3.1"
+
+stories:
+
+- story: Checking order status
+  steps:
+  - intent: track_order   # Trigger the track order 
+  - action: utter_ask_order_number  # Ask for the order number
+  - intent: provide_order_number  # User provides the order number
+  - action: handle_track_order  # Custom action that processes the order number and returns the status
+
+- story: Reporting an issue with order
+  steps:
+    - intent: report_issue
+    - action: utter_ask_order_number
+    - intent: provide_order_number
+    - action: utter_ask_issue
+    - intent: provide_issue
+    - action: capture_full_message_form
+    - action: action_capture_full_message
+    - action: utter_ask_contact_method
+    - intent: provide_contact_method
+    - action: handle_report_issue
